@@ -9,21 +9,15 @@
                      </a>
                      <ul class="nav nav-treeview">
                          <li class="nav-item">
-                             <a href="crearPersona.php" class="nav-link">
+                             <a href="admCrearPersona.php" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
-                                 <p>Crear</p>
+                                 <p>Crear Usuario</p>
                              </a>
                          </li>
                          <li class="nav-item">
-                             <a href="../forms/advanced.html" class="nav-link">
+                             <a href="admModificarEliminar.php" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
-                                 <p>Modificar</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="../forms/editors.html" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Eliminar</p>
+                                 <p>Mod./Eli. Usuario</p>
                              </a>
                          </li>
                      </ul>

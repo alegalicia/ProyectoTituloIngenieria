@@ -28,7 +28,7 @@ class funciones_BD
       FROM
         usuarios u
         inner join roles r on r.idroles = u.idusuarios
-        inner join personas p on p.idpersonas = u.idpersona
+        inner join personas p on p.rut = u.fk_rut
       where
         u.estado = 1
         AND r.estado = 1

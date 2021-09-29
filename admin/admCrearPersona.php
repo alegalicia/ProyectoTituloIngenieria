@@ -21,7 +21,6 @@
                    <div class="card card-success ">
                        <div class="card-header">
                            <h3 class="card-title">Crear Usuario</h3>
-
                            <div class="card-tools">
                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                    <i class="fas fa-minus"></i>
@@ -40,10 +39,10 @@
                                        <label>Seleccione Rol a asignar: </label>
                                        <select class="form-control select2" style="width: 100%;">
                                            <option selected="selected">Administrador General</option>
-                                           <option>Supervisor General</option>
-                                           <option>Agronomo</option>
-                                           <option>Tecnico de campo</option>
-                                           <option>Ejecutivo</option>
+                                           <option value="1">Supervisor General</option>
+                                           <option value="2">Agronomo</option>
+                                           <option value="3">Tecnico de campo</option>
+                                           <option value="4">Ejecutivo</option>
                                        </select>
                                    </div>
 
@@ -76,8 +75,8 @@
                                    </div>
                                    <!-- /.col -->
                                </div>
+                               <button class="btn btn-success">Crear Usuario</button>
                            </div>
-
                        </div>
                        <!-- /.card-body -->
                        <div class="card-footer">
