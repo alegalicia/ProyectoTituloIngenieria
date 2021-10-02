@@ -8,13 +8,13 @@
 
     $conn = new conexion();
 
-    $query = "SELECT * FROM registros_monitorio";
+    $query = "SELECT * FROM registros_monitoreo";
     $select = mysqli_query($conn->conectardb(),$query);
 
     if($select->num_rows){
 
         
-        $query = "INSERT INTO `registros_monitorio` (`idregistros_monitorio`, `idsensores`, `idtipo_registro`, `registros_monitorio`, `fecha`, `hora`, `estado`) 
+        $query = "INSERT INTO `registros_monitorio` (`idregistros_monitoreo`, `id_sensores`, `id_tipo_registro`, `registros_monitorio`, `fecha`, `hora`, `estado`) 
         VALUES (NULL, '1', '1', $humidity , now(), now(), '1');";
 
         //         $query = "INSERT INTO `registros_monitorio` (`idregistros_monitorio`, `idsensores`, `idtipo_registro`, `registros_monitoriocol`, `estado`) 
