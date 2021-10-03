@@ -14,16 +14,18 @@
     if($select->num_rows){
 
         
-        $query = "INSERT INTO `registros_monitorio` (`idregistros_monitoreo`, `id_sensores`, `id_tipo_registro`, `registros_monitorio`, `fecha`, `hora`, `estado`) 
+        $query = "INSERT INTO `registros_monitoreo` (`id_registros_monitoreo`, `id_sensores`, `id_tipo_registro`, `registros_monitorio`, `fecha`, `hora`, `estado`) 
         VALUES (NULL, '1', '1', $humidity , now(), now(), '1');";
 
-        //         $query = "INSERT INTO `registros_monitorio` (`idregistros_monitorio`, `idsensores`, `idtipo_registro`, `registros_monitoriocol`, `estado`) 
-        // VALUES (NULL, '1', '1', $temperature, '1');";
+        $insert = mysqli_query($conn->conectardb(),$query); 
 
-        // $query = "UPDATE device_state SET temperatura = $temperature, humedad=$humidity WHERE idDevice = '$device'";
+        $query = "INSERT INTO `registros_monitoreo` (`id_registros_monitoreo`, `id_sensores`, `id_tipo_registro`, `registros_monitorio`, `fecha`, `hora`, `estado`) 
+        VALUES (NULL, '1', '2', $temperature , now(), now(), '1');";
 
         $insert = mysqli_query($conn->conectardb(),$query);
-
+        // $query = "INSERT INTO `registros_monitorio` (`idregistros_monitorio`, `idsensores`, `idtipo_registro`, `registros_monitoriocol`, `estado`) 
+        // VALUES (NULL, '1', '1', $temperature, '1');";
+        // $query = "UPDATE device_state SET temperatura = $temperature, humedad=$humidity WHERE idDevice = '$device'";
         // $query = "INSERT INTO device_historic(idDevice, variable, valor, fecha) VALUES ('$device','temperatura','$temperature',NOW())";
         // $insert = mysqli_query($conn->conectardb(),$query);
         // $query = "INSERT INTO device_historic(idDevice, variable, valor, fecha) VALUES ('$device','humedad','$humidity',NOW())";
@@ -34,6 +36,3 @@
     }else{
         echo "***LA TARJETA NO EXISTE***<br>";
     }
-
-    
-?>

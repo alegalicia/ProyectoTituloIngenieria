@@ -3,21 +3,21 @@
                      <a href="#" class="nav-link">
                          <i class="nav-icon fas fa-edit"></i>
                          <p>
-                             Ejecutivo
+                             Sensores
                              <i class="fas fa-angle-left right"></i>
                          </p>
                      </a>
                      <ul class="nav nav-treeview">
                          <li class="nav-item">
-                             <a href="admEjecutivoKPI.php" class="nav-link">
+                             <a href="admCrearSenor.php" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
-                                 <p>KPI</p>
+                                 <p>Crear Sensores</p>
                              </a>
                          </li>
                          <li class="nav-item">
-                             <a href="admEjecutivoKPILive.php" class="nav-link">
+                             <a href="admModifSensor.php" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
-                                 <p class="btn-success pl-2 pr-2">KPI - Real time</p>
+                                 <p>Mod./Eli. Sensores</p>
                              </a>
                          </li>
                      </ul>

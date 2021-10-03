@@ -18,17 +18,17 @@ class funciones_BD
     {
         $sql = "SELECT
         u.estado,
-        u.idrol,
-        u.idusuarios,
+        u.id_rol,
+        u.id_usuarios,
         r.rol,
-        r.idroles,
+        r.id_roles,
         r.estado,
         p.apellidos,
         p.nombres
       FROM
         usuarios u
-        inner join roles r on r.idroles = u.idusuarios
-        inner join personas p on p.rut = u.fk_rut
+        inner join roles r on r.id_roles = u.id_usuarios
+        inner join personas p on p.rut = u.rut
       where
         u.estado = 1
         AND r.estado = 1
@@ -53,10 +53,10 @@ class funciones_BD
         while ($fila = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $num++;
             $_SESSION["login"] = "ok";
-            echo $_SESSION["rol"] = $fila["idrol"];
-            echo $_SESSION["rolNombre"] = $fila["rol"];
-            echo $_SESSION["nombre"] = strtoupper($fila["nombres"]);
-            echo $_SESSION["apellido"] = strtoupper($fila["apellidos"]);
+            $_SESSION["rol"] = $fila["id_rol"];
+            $_SESSION["rolNombre"] = $fila["rol"];
+            $_SESSION["nombre"] = strtoupper($fila["nombres"]);
+            $_SESSION["apellido"] = strtoupper($fila["apellidos"]);
         }
 
         $opcion = $_SESSION["rol"];
@@ -68,11 +68,23 @@ class funciones_BD
 
                 case "1":
                     //perfil superadminsitrador
-                    echo "<meta http-equiv='refresh' content='0;url=/admin/index.php'>";
+                    echo "<meta http-equiv='refresh' content='0;url=/admin/administrador.php'>";
                     break;
 
                 case "2":
-                    echo " caso 2";
+                    echo "<meta http-equiv='refresh' content='0;url=/admin/supervisor.php'>";
+                    break;
+
+                case "3":
+                    echo "<meta http-equiv='refresh' content='0;url=/admin/agronomo.php'>";
+                    break;
+
+                case "4":
+                    echo "<meta http-equiv='refresh' content='0;url=/admin/tecnico.php'>";
+                    break;
+
+                case "5":
+                    echo "<meta http-equiv='refresh' content='0;url=/admin/ejecutivo.php'>";
                     break;
 
                 default:

@@ -34,7 +34,8 @@ if (!isset($_SESSION["login"])) {
                 <img src="/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Administrador</a>
+                <a href="#" class="d-block"><?php echo $_SESSION["rolNombre"] ?></a>
+                <a href="#" class="d-block"><?php echo $_SESSION["nombre"] . ", " . $_SESSION["apellido"] ?></a>
             </div>
         </div>
         <!-- Sidebar Menu -->
@@ -53,6 +54,11 @@ if (!isset($_SESSION["login"])) {
                 include('layout/roles/tecnico.php');
 
                 include('layout/roles/ejecutivo.php');
+
+                include('layout/roles/admInvernadero.php');
+
+                include('layout/roles/admSensores.php');
+
                 ?>
                 <!-- ======================================================= -->
             </ul>

@@ -4,7 +4,6 @@
             session_start();
         }
 
-        if ($_SESSION["rol"] == 1) {
             include('layout/header.php');
             include('layout/menu.php');
         ?>
@@ -34,6 +33,7 @@
                        <div class="card-body">
                            <div class="row">
                                <div class="col-md-6">
+                                   
                                    <!-- /.form-group -->
                                    <div class="form-group">
                                        <label>Seleccione Rol a asignar: </label>
@@ -45,8 +45,8 @@
                                            <option value="4">Ejecutivo</option>
                                        </select>
                                    </div>
-
                                    <!-- /.form-group -->
+
                                    <div class="form-group">
                                        <label for="exampleInputEmail1">Nombre/s</label>
                                        <input type="text" class="form-control" id="nombres" placeholder="Nombres">
@@ -89,7 +89,4 @@
 
        <?php
             include('layout/footer.php');
-        } else {
-            include('sinacseso.php');
-        }
         ?>

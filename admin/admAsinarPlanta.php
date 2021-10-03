@@ -8,6 +8,7 @@ if ($_SESSION["rol"] == 1) {
     include('layout/header.php');
     include('layout/menu.php');
 ?>
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -16,10 +17,10 @@ if ($_SESSION["rol"] == 1) {
                 <h1>Smart Agronomy</h1>
                 <hr>
             </div>
-
-            <div class="card card-success col-10">
+            <!-- SELECT2 EXAMPLE -->
+            <div class="card card-success ">
                 <div class="card-header">
-                    <h3 class="card-title">Buscar Planta</h3>
+                    <h3 class="card-title">Asignar Planta</h3>
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
                             <i class="fas fa-minus"></i>
@@ -29,22 +30,37 @@ if ($_SESSION["rol"] == 1) {
                         </button>
                     </div>
                 </div>
+
+
+                <!-- /.card-header -->
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label>Seleccione Invernadero: </label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Mapocho 01</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Seleccione Planta: </label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Naranja</option>
+                        </select>
+                    </div>
+
+                    <!-- /.form-group -->
+                    <button class="btn btn-success">Ingresar Planta a Invernadero</button>
+                </div>
+
                 <!-- /.card-header -->
                 <div class="card-body">
-
-                    <div class="input-group ">
-                        <input class="form-control py-2 border-right-0 border" type="search" placeholder="Buscar Planta" id="buscar">
-                        <span class="input-group-append">
-                            <button type="submit">
-                                <div class="input-group-text bg-transparent"><i class="fa fa-search"></i></div>
-                            </button>
-                        </span>
-                    </div>
                     <hr>
-                    <table class="table table-striped col-12">
+                    <h4>Detalle Asignacioón: </h4>
+                    <table class="table table-striped col-8">
                         <thead>
                             <tr>
-                                <th scope="col">Planta</th>
+                                <th scope="col">Nombre</th>
                                 <th scope="col">Temperatura Ambiental</th>
                                 <th scope="col">Humedad Ambeintal</th>
                                 <th scope="col">Humedad de Suelo</th>
@@ -57,29 +73,26 @@ if ($_SESSION["rol"] == 1) {
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td> <button type="button" class="bbtn btn-danger mr-3 pr-1">Quitar</button> <button type="button" class="bbtn btn-success mr-3">Modificar</button></td>
-
+                                <td> <button type="button" class="bbtn btn-danger mr-3">Quitar</button> </td>
                             </tr>
                             <tr>
                                 <th scope="row">Naranja</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
-                                <td> <button type="button" class="bbtn btn-danger mr-3 pr-1">Quitar</button> <button type="button" class="bbtn btn-success mr-3">Modificar</button></td>
-
-
+                                <td> <button type="button" class="bbtn btn-danger mr-3">Quitar</button> </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <!-- /.card-body -->
+
                 <div class="card-footer">
                     Smart Agronomy
                 </div>
             </div>
-
+            <!-- /.card -->
         </div>
-    </div>
+    </div><!-- /.container-fluid -->
 
 <?php
     include('layout/footer.php');

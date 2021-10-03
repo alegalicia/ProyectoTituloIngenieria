@@ -44,12 +44,12 @@ if ($_SESSION["rol"] == 1) {
                     <table class="table table-striped ">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                                <th scope="col">Handle</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Rut</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Rol</th>
+                                <th scope="col">Modificar</th>
+                            
                             </tr>
                         </thead>
                         <tbody>
@@ -58,24 +58,24 @@ if ($_SESSION["rol"] == 1) {
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
+                                <td> <button type="button" class="bbtn btn-danger mr-3 pr-1">Quitar</button> <button type="button" class="bbtn btn-success mr-3 pr-1">Modificar</button> </td>
+                            
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
+                                <td> <button type="button" class="bbtn btn-danger mr-3 pr-1">Quitar</button> <button type="button" class="bbtn btn-success mr-3 pr-1">Modificar</button> </td>
+                            
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Larry</td>
                                 <td>the Bird</td>
                                 <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
+                                <td> <button type="button" class="bbtn btn-danger mr-3 pr-1">Quitar</button> <button type="button" class="bbtn btn-success mr-3 pr-1">Modificar</button> </td>
+                                                            
 
                             </tr>
                         </tbody>
