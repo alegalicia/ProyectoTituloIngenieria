@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/admin/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/admin/dist/css/adminlte.min.css">
+    
+    <link rel="stylesheet" href="/admin/plugins/toastr.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-footer-fixed">
