@@ -1,3 +1,4 @@
+<!-- modificar y eliminar persona -->
 <?php
 error_reporting(0);
 if (!isset($_SESSION["login"])) {
@@ -24,6 +25,7 @@ if ($_SESSION["rol"] == 1) {
                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
                             <i class="fas fa-minus"></i>
                         </button>
+                        <input type="hidden" id="opcion" value="buscar">
                         <button type="button" class="btn btn-tool" data-card-widget="remove">
                             <i class="fas fa-times"></i>
                         </button>
@@ -33,53 +35,13 @@ if ($_SESSION["rol"] == 1) {
                 <div class="card-body">
 
                     <div class="input-group ">
-                        <input class="form-control py-2 border-right-0 border" type="search" placeholder="Buscar Persona" id="buscar">
-                        <span class="input-group-append">
-                            <button type="submit">
-                                <div class="input-group-text bg-transparent"><i class="fa fa-search"></i></div>
-                            </button>
-                        </span>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-4" type="search" placeholder="Rut, Nombre o Apellido" aria-label="Search" id="usuarioBuscar">
+                            <button class="btn btn-outline-success my-sm-0" type="submit" id="buscar">Buscar</button>
+                        </form>
                     </div>
                     <hr>
-                    <table class="table table-striped ">
-                        <thead>
-                            <tr>
-                                <th scope="col">Rut</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Apellido</th>
-                                <th scope="col">Rol</th>
-                                <th scope="col">Modificar</th>
-                            
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td> <button type="button" class="bbtn btn-danger mr-3 pr-1">Quitar</button> <button type="button" class="bbtn btn-success mr-3 pr-1">Modificar</button> </td>
-                            
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td> <button type="button" class="bbtn btn-danger mr-3 pr-1">Quitar</button> <button type="button" class="bbtn btn-success mr-3 pr-1">Modificar</button> </td>
-                            
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td> <button type="button" class="bbtn btn-danger mr-3 pr-1">Quitar</button> <button type="button" class="bbtn btn-success mr-3 pr-1">Modificar</button> </td>
-                                                            
-
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div id="resultado"></div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
@@ -87,11 +49,15 @@ if ($_SESSION["rol"] == 1) {
                 </div>
             </div>
 
+            </div>
         </div>
     </div>
+    <?php
+    include('layout/footer.php');
+    ?>
+    <script src="js/adm/admBuscarPersona.js"></script>
 
 <?php
-    include('layout/footer.php');
 } else {
     include('sinacseso.php');
 }

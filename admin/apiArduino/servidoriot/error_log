@@ -1,0 +1,9 @@
+[28-Sep-2021 02:14:12 UTC] PHP Notice:  Undefined index: divice_label in /home2/cso53794/public_html/servidoriot/prueba_recibe.php on line 5
+[28-Sep-2021 02:14:12 UTC] PHP Stack trace:
+[28-Sep-2021 02:14:12 UTC] PHP   1. {main}() /home2/cso53794/public_html/servidoriot/prueba_recibe.php:0
+[28-Sep-2021 02:14:12 UTC] PHP Notice:  Undefined index: temperature in /home2/cso53794/public_html/servidoriot/prueba_recibe.php on line 6
+[28-Sep-2021 02:14:12 UTC] PHP Stack trace:
+[28-Sep-2021 02:14:12 UTC] PHP   1. {main}() /home2/cso53794/public_html/servidoriot/prueba_recibe.php:0
+[28-Sep-2021 02:14:12 UTC] PHP Notice:  Undefined index: humidity in /home2/cso53794/public_html/servidoriot/prueba_recibe.php on line 7
+[28-Sep-2021 02:14:12 UTC] PHP Stack trace:
+[28-Sep-2021 02:14:12 UTC] PHP   1. {main}() /home2/cso53794/public_html/servidoriot/prueba_recibe.php:0

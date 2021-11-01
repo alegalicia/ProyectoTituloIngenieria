@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_SESSION["rol"] == 1) {
     $telefono = isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] : isset($_REQUEST['telefono']);
     $celular = isset($_REQUEST['celular']) ? $_REQUEST['celular'] : isset($_REQUEST['celular']);
     $fecha = isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : isset($_REQUEST['fecha']);
-
+ 
     include_once $_SERVER['DOCUMENT_ROOT'] . '/controller/cadm.php';
     $enviar = new controladopersona();
     $resultado = $enviar->crearPersona(

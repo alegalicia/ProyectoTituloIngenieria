@@ -46,7 +46,12 @@
                                            <option value="5">Ejecutivo</option>
                                        </select>
                                    </div>
+
                                    <!-- /.form-group -->
+                                   <div class="form-group">
+                                       <label for="exampleInputEmail1">RUT</label>
+                                       <input type="text" class="form-control" id="rut" placeholder="RUT">
+                                   </div>
 
                                    <div class="form-group">
                                        <label for="exampleInputEmail1">Nombre/s</label>
@@ -59,13 +64,8 @@
                                    </div>
 
                                    <div class="form-group">
-                                       <label for="exampleInputEmail1">RUT</label>
-                                       <input type="text" class="form-control" id="rut" placeholder="RUT">
-                                   </div>
-
-                                   <div class="form-group">
                                        <label for="celular">Número de Celular</label>
-                                       <input type="text" class="form-control" placeholder="Número de Celular" id="celular" value="2021-12-31">
+                                       <input type="text" class="form-control" placeholder="Número de Celular" id="celular">
                                    </div>
 
                                </div>
@@ -73,7 +73,7 @@
 
                                    <div class="form-group">
                                        <label for="fecha">Número de Telefono Fijo</label>
-                                       <input type="text" class="form-control" placeholder="Número de Telefono Fijo" id="telefono" value="2021-12-31">
+                                       <input type="text" class="form-control" placeholder="Número de Telefono Fijo" id="telefono">
                                    </div>
                                    <div class="form-group">
                                        <label for="fecha">Fecha Nacimiento</label>
@@ -92,6 +92,7 @@
                                </div>
                                <button class="btn btn-success" id="crear">Crear Usuario</button>
                            </div>
+                           <div id="resultado"></div>
                        </div>
                        <!-- /.card-body -->
                        <div class="card-footer">
@@ -100,7 +101,6 @@
                    </div>
                    <!-- /.card -->
                </div>
-               <div id="resultado"></div>
            </div><!-- /.container-fluid -->
 
            <?php

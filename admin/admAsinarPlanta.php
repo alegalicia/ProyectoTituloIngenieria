@@ -31,7 +31,6 @@ if ($_SESSION["rol"] == 1) {
                     </div>
                 </div>
 
-
                 <!-- /.card-header -->
                 <div class="col-md-6">
 
