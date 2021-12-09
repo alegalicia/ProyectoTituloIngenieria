@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     //btn buscar
-
     $("#resultado").hide();
     $('#actualizar').hide();
     $('#buscar').click(function(e) {
@@ -121,7 +120,6 @@ function actualizar() {
 
             }
         });
-
     });
 }
 

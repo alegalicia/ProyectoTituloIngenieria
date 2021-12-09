@@ -54,9 +54,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_SESSION["rol"] == 1) {
                 </tbody>
             </table>
 
-            <?php
+        <?php
         } else {
-            return "sin resultado";
+        ?>
+            <div class="alert alert-danger col-4" role="alert">
+                Usuario no encontrado...!!!
+            </div>
+
+            <?php
         }
     }
 
@@ -124,9 +129,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_SESSION["rol"] == 1) {
         $correo = isset($_REQUEST['correo']) ? $_REQUEST['correo'] : isset($_REQUEST['correo']);
         echo "actualizado";
         $resultado = $enviar->actualizar($rut, $nombre, $apellido, $celular, $telefono, $fecha, $correo);
-
-        if ($resultado == 1) {
-        }
     }
 
     if ($opcion === "eliminarPersona") {

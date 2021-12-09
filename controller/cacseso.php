@@ -1,5 +1,5 @@
 <?php
-error_reporting(0); //oculta errores
+//error_reporting(0); //oculta errores
 try {
 
     $opcion = $_REQUEST['opcion'];
@@ -16,7 +16,6 @@ try {
             $obj_login = new Clogin();
 
             try {
-
                 $obj_login->login($usuario, $clave);
             } catch (Exception $e) {
                 echo $e;
