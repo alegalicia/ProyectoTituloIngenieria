@@ -4,6 +4,7 @@ error_reporting(0);
 header('Content-Type: application/json');
 $pdo=new PDO("mysql:dbname=smart;host=127.0.0.1","root","");
 //$pdo=new PDO("mysql:dbname=id17674836_smart;host=localhost","id17674836_agronomy","j*[MSTUO-c5Sd9%F");
+$pdo=new PDO("mysql:dbname=id18110680_smart;host=localhost","id18110680_agronomy","2du+c9=mX#KXoU+[");
 switch($_GET['q']){
 
 		// Buscar Último Dato

@@ -22,7 +22,7 @@ if ($_SESSION["rol"] == 1) {
         ['Label', 'Value'],
         ['Hum. Ambiente', 100],
         ['Hum. Suelo', 100],
-       // ['Temp. Ambiente', 50],
+        // ['Temp. Ambiente', 50],
       ]);
 
       var options = {
@@ -41,7 +41,7 @@ if ($_SESSION["rol"] == 1) {
 
       setInterval(function() {
         let JSON = $.ajax({
-          url: "https://smartagronomy2021.000webhostapp.com/admin/api.php?q=1",
+          url: "https://smartagronomi2021.000webhostapp.com/admin/api.php?q=1",
           // url: "http://localhost:3000/admin/api.php?q=1",
           dataType: "json",
           async: false
@@ -49,20 +49,6 @@ if ($_SESSION["rol"] == 1) {
         let respuesta = jQuery.parseJSON(JSON)
         data.setValue(0, 1, respuesta[0].humedad - Math.round(2 * Math.random()));
 
-        JSON = ""
-        JSON = $.ajax({
-          url: "https://smartagronomy2021.000webhostapp.com/admin/api.php?q=2",
-          // url: "http://localhost:3000/admin/api.php?q=1",
-          dataType: "json",
-          async: false
-        }).responseText;
-
-        respuesta = jQuery.parseJSON(JSON)
-
-        data.setValue(1, 1, respuesta[0].temperatura - Math.round(2 * Math.random()));
-
-        //data.setValue(2, 1, 20 - Math.round(4 * Math.random()));
-        chart.draw(data, options);
 
         if (respuesta[0].humedad >= 70) {
           $.ajax({
@@ -76,13 +62,28 @@ if ($_SESSION["rol"] == 1) {
           });
         }
 
+        JSON = ""
+        JSON = $.ajax({
+          url: "https://smartagronomi2021.000webhostapp.com/admin/api.php?q=2",
+          // url: "http://localhost:3000/admin/api.php?q=1",
+          dataType: "json",
+          async: false
+        }).responseText;
+
+        respuesta = jQuery.parseJSON(JSON)
+
+        data.setValue(1, 1, respuesta[0].temperatura - Math.round(2 * Math.random()));
+
+        //data.setValue(2, 1, 20 - Math.round(4 * Math.random()));
+        chart.draw(data, options);
+
       }, 6000);
     }
 
     setInterval(function() {
       let JSON = $.ajax({
-        //url: "https://smartagronomy2021.000webhostapp.com/admin/api.php?q=1",
-        url: "http://localhost:3000/admin/api.php?q=1",
+        url: "https://smartagronomi2021.000webhostapp.com/admin/api.php?q=1",
+        //url: "http://localhost:3000/admin/api.php?q=1",
         dataType: "json",
         async: false
       }).responseText;
