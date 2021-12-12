@@ -4,7 +4,7 @@ if (!isset($_SESSION["login"])) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_SESSION["rol"] == 1) {
-    //var_dump($_POST);
+   var_dump($_POST);
     $rol = isset($_REQUEST['rol']) ? $_REQUEST['rol'] : isset($_REQUEST['rol']);
     $nombres = isset($_REQUEST['nombres']) ? $_REQUEST['nombres'] : isset($_REQUEST['nombres']);
     $apellidos = isset($_REQUEST['apellidos']) ? $_REQUEST['apellidos'] : isset($_REQUEST['apellidos']);
@@ -28,13 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_SESSION["rol"] == 1) {
         $celular,
         $telefono
     );
-    echo $resultado;
-    
-    if ($resultado != 1) {
-        return 0;
-    } else {
-        return;
-    }
+    //echo $resultado;
+
+        return 1;
+
 } else {
     echo 'Sin Acceso...!!!';
 }

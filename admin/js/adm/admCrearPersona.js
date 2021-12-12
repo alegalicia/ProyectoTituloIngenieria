@@ -23,8 +23,8 @@ $(document).ready(function() {
                 data: { rol, nombres, apellidos, rut, correo, clave, fecha, telefono, celular },
                 success: function(response) {
                     $("#resultado").val("");
-
-                    if (response == 1) {
+                    console.log(response)
+                    if (response != 1) {
                         $("#resultado").fadeOut();
                         $("#crear")
                             .removeClass("btn-success")
@@ -116,9 +116,9 @@ $(document).ready(function() {
         let rutV = false
         let correoV = false
         let claveV = false
-        let fechaV = false
+        let fechaV = true
         let celularV = false
-        let telefonoV = false
+        let telefonoV = true
 
         // return true
         //== validad  nombres
@@ -208,7 +208,7 @@ $(document).ready(function() {
         emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
         //Se muestra un texto a modo de ejemplo, luego va a ser un icono
         if (emailRegex.test(correo)) {
-            correoV = false
+            correoV = true
         } else {
             toastr["error"]("Correo electornico no valido...!!!", "Smart Agronomy")
             toastr.options = {
@@ -287,5 +287,10 @@ $(document).ready(function() {
         }
         //==================================================
 
+        if (nombresV == true && apellidosV == true && rutV == true && correoV == true && claveV == true) {
+            return true;
+        } else {
+            return false;
+        }
     }
 });

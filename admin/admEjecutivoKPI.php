@@ -20,7 +20,7 @@ if ($_SESSION["rol"] == 1) {
                             <!-- AREA CHART -->
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Area Chart</h3>
+                                    <h3 class="card-title">Caudal de agua utilizado</h3>
 
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -43,7 +43,7 @@ if ($_SESSION["rol"] == 1) {
                             <!-- DONUT CHART -->
                             <div class="card card-danger">
                                 <div class="card-header">
-                                    <h3 class="card-title">Donut Chart</h3>
+                                    <h3 class="card-title">Productos Principales</h3>
 
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -61,34 +61,13 @@ if ($_SESSION["rol"] == 1) {
                             </div>
                             <!-- /.card -->
 
-                            <!-- PIE CHART -->
-                            <div class="card card-danger">
-                                <div class="card-header">
-                                    <h3 class="card-title">Pie Chart</h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
-
                         </div>
                         <!-- /.col (LEFT) -->
                         <div class="col-md-6">
                             <!-- LINE CHART -->
                             <div class="card card-info">
                                 <div class="card-header">
-                                    <h3 class="card-title">Line Chart</h3>
+                                    <h3 class="card-title">Consumo de energia Solar / CC </h3>
 
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -108,52 +87,6 @@ if ($_SESSION["rol"] == 1) {
                             </div>
                             <!-- /.card -->
 
-                            <!-- BAR CHART -->
-                            <div class="card card-success">
-                                <div class="card-header">
-                                    <h3 class="card-title">Bar Chart</h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart">
-                                        <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                                    </div>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
-
-                            <!-- STACKED BAR CHART -->
-                            <div class="card card-success">
-                                <div class="card-header">
-                                    <h3 class="card-title">Stacked Bar Chart</h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart">
-                                        <canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                                    </div>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
-
                         </div>
                         <!-- /.col (RIGHT) -->
                     </div>
@@ -164,9 +97,9 @@ if ($_SESSION["rol"] == 1) {
         </div>
     </div>
 
-<?php
+    <?php
     include('layout/footer.php');
-?>
+    ?>
     <script>
         $(function() {
             /* ChartJS
@@ -182,7 +115,7 @@ if ($_SESSION["rol"] == 1) {
             var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
 
             var areaChartData = {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                labels: ['Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
                 datasets: [{
                         label: 'Digital Goods',
                         backgroundColor: 'rgba(60,141,188,0.9)',
@@ -258,12 +191,12 @@ if ($_SESSION["rol"] == 1) {
             var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
             var donutData = {
                 labels: [
-                    'Chrome',
-                    'IE',
-                    'FireFox',
-                    'Safari',
-                    'Opera',
-                    'Navigator',
+                    'Tomate',
+                    'Lechuga',
+                    'Pepino',
+                    'Calabaza',
+                    'Limon',
+                    'Maiz',
                 ],
                 datasets: [{
                     data: [700, 500, 400, 600, 300, 100],

@@ -86,7 +86,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/persona.png" class="img-fluid" alt="">
+            <img src="imagenes/alejandro.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <!-- <h3>UI/UX/SEO/SEM Designer &amp; Web Developer.</h3> -->
@@ -106,12 +106,13 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nivel:</strong> <span>Senior</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span>agalicia@solobinary</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Rol Scrum:</strong> <span>Master/Gestor de proyecto/Team
+                      Web
+                    </span></li>
                 </ul>
               </div>
             </div>
             <p>
-
             </p>
           </div>
         </div>
@@ -126,7 +127,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/persona.png" class="img-fluid" alt="">
+            <img src="imagenes/patricio.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
 
@@ -146,7 +147,9 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nivel:</strong> <span>Senior</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span>ptamayo@solobinary</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Rol Scrum:</strong> <span>
+                      Product Owner/Arquitecto de software
+                    </span></li>
                 </ul>
               </div>
             </div>
@@ -165,7 +168,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/persona.png" class="img-fluid" alt="">
+            <img src="imagenes/nicolas.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
 
@@ -185,7 +188,8 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nivel:</strong> <span>Senior</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span>nramireza@solobinary</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Rol Scrum</strong> <span>Developemnet /Team
+                      Arduino</span></li>
                 </ul>
               </div>
             </div>
@@ -204,11 +208,11 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/persona.png" class="img-fluid" alt="">
+            <img src="imagenes/jordan.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
 
-            <h3>Jordan Concha</h3>
+            <h3>Jórdan Concha</h3>
             <p class="fst-italic">
               <br>
             </p>
@@ -224,7 +228,8 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Nivel:</strong> <span>Senior</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span>ajconcha@solobinary</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Rol Scrum:</strong> <span>QA / Área de pruebas
+/ Gestor TDD</span></li>
                 </ul>
               </div>
             </div>

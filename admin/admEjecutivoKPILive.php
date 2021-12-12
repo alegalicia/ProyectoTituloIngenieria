@@ -14,7 +14,7 @@ if ($_SESSION["rol"] == 1) {
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Graficos Flotantes</h1>
+                        <h1>Invernadero #1 Humedad</h1>
                     </div>
                 </div>
             </div><!-- /.container-fluid -->
@@ -34,7 +34,7 @@ if ($_SESSION["rol"] == 1) {
                                 </h3>
 
                                 <div class="card-tools">
-                                    RTiempo real
+                                    Tiempo Real
                                     <div class="btn-group" id="realtime" data-toggle="btn-toggle">
                                         <button type="button" class="btn btn-default btn-sm active" data-toggle="on">On</button>
                                         <button type="button" class="btn btn-default btn-sm" data-toggle="off">Off</button>
@@ -51,113 +51,7 @@ if ($_SESSION["rol"] == 1) {
                     </div>
                     <!-- /.col -->
                 </div>
-                <!-- /.row -->
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Line chart -->
-                        <div class="card card-primary card-outline">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    <i class="far fa-chart-bar"></i>
-                                    Grafico Lineal
-                                </h3>
-
-                                <div class="card-tools">
-                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div id="line-chart" style="height: 300px;"></div>
-                            </div>
-                            <!-- /.card-body-->
-                        </div>
-                        <!-- /.card -->
-
-                        <!-- Area chart -->
-                        <div class="card card-primary card-outline">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    <i class="far fa-chart-bar"></i>
-                                    Grafico de Area
-                                </h3>
-
-                                <div class="card-tools">
-                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div id="area-chart" style="height: 338px;" class="full-width-chart"></div>
-                            </div>
-                            <!-- /.card-body-->
-                        </div>
-                        <!-- /.card -->
-
-                    </div>
-                    <!-- /.col -->
-
-                    <div class="col-md-6">
-                        <!-- Bar chart -->
-                        <div class="card card-primary card-outline">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    <i class="far fa-chart-bar"></i>
-                                    Grafico de Barras
-                                </h3>
-
-                                <div class="card-tools">
-                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div id="bar-chart" style="height: 300px;"></div>
-                            </div>
-                            <!-- /.card-body-->
-                        </div>
-                        <!-- /.card -->
-
-                        <!-- Donut chart -->
-                        <div class="card card-primary card-outline">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    <i class="far fa-chart-bar"></i>
-                                    Grafico de Dona
-                                </h3>
-
-                                <div class="card-tools">
-                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div id="donut-chart" style="height: 300px;"></div>
-                            </div>
-                            <!-- /.card-body-->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
             </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->

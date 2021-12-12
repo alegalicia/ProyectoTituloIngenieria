@@ -1,4 +1,8 @@
 <?php 
+// define("DB_HOST", 'mysql:dbname=cso53794_smart;host=localhost');
+// define("DB_USER", "cso53794");
+// define("DB_PASSWORD", "FLL%jWOhm{3z(2h");
+
 define("DB_HOST", 'mysql:dbname=smart;host=localhost');
 define("DB_USER", "root");
 define("DB_PASSWORD", "");
