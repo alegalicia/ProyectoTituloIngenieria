@@ -15,6 +15,7 @@ if ($_SESSION["rol"] == 1) {
       'packages': ['gauge']
     });
     google.charts.setOnLoadCallback(drawChart);
+    var contadorDos = 0;
 
     function drawChart() {
 
@@ -35,6 +36,7 @@ if ($_SESSION["rol"] == 1) {
         minorTicks: 5
       };
 
+
       var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
 
       chart.draw(data, options);
@@ -50,7 +52,7 @@ if ($_SESSION["rol"] == 1) {
         data.setValue(0, 1, respuesta[0].humedad - Math.round(2 * Math.random()));
 
 
-        if (respuesta[0].humedad >= 70) {
+        if (respuesta[0].humedad >= 70 && contadorDos == 0) {
           $.ajax({
             type: "post",
             url: "correo.php",
@@ -60,6 +62,7 @@ if ($_SESSION["rol"] == 1) {
               console.log("correo enviado de alerta");
             }
           });
+          contadorDos++;
         }
 
         JSON = ""
@@ -77,7 +80,7 @@ if ($_SESSION["rol"] == 1) {
         //data.setValue(2, 1, 20 - Math.round(4 * Math.random()));
         chart.draw(data, options);
 
-      }, 6000);
+      }, 1000);
     }
 
     setInterval(function() {
